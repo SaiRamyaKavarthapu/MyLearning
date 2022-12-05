@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from "react";
+import Form from './Form'
 import './App.css';
 
-function App() {
+const App = () => {
+
+
+   const [gender, setGender]=useState();
+
+ 
+  
+    
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   <div>
+    <h1>{gender}</h1>
+    <input type="radio" name="gender" value="Male" onChange={e=>setGender(e.target.value)}/>Male
+    <input type="radio" name="gender" value="Female" onChange={e=>setGender(e.target.value)}/>Female
+   </div>
+  )
 }
 
 export default App;
