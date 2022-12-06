@@ -12,7 +12,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import MedicalForm from './Assessment/MedicalForm'
 import SummaryPage from './Assessment/SummaryPage'
 import Childtoparent from './childtoparent'
-import App from './controlled&uncontrolled/controlled';
+//import App from './controlled&uncontrolled/controlled';
 import Uncontrolled from './controlled&uncontrolled/uncontrolled';
 import UpdateState from './UpdateState'
 import Car from '././OnclickFunction'
@@ -20,12 +20,14 @@ import Family from '././onChangeFunction'
 import PopupModal from '././Popupmodal'
 import ListComponent from './ListComponent'
 import MapFunction from './mapfunction'
-import App1 from './List'
+import App from './List'
 import Users from './././List1'
+import ReduceFunction from './reduce'
+import Longest from './longestwordinString'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App1/>
+    <Longest/>
   </React.StrictMode>
 );
 
