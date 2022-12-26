@@ -20,14 +20,16 @@ import Family from '././onChangeFunction'
 import PopupModal from '././Popupmodal'
 import ListComponent from './ListComponent'
 import MapFunction from './mapfunction'
-import App from './List'
+import App from './List1'
 import Users from './././List1'
 import ReduceFunction from './reduce'
 import Longest from './longestwordinString'
+import Controlled from './controlled&uncontrolled/controlled';
+import WithList from './HigherorderComponent/withlist'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Longest/>
+    <WithList/>
   </React.StrictMode>
 );
 
